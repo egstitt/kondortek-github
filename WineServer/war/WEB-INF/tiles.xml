@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 2.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+<tiles-definitions>
+    <definition name="base.definition"
+        template="/WEB-INF/jsp/layout.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header" value="/WEB-INF/jsp/header.jsp" />
+        <!-- <put-attribute name="menu" value="/WEB-INF/jsp/menu.jsp" /> -->
+        <put-attribute name="body" value="" />
+        <!-- <put-attribute name="footer" value="/WEB-INF/jsp/footer.jsp" /> -->
+    </definition>
+ 
+    <definition name="winery_list" extends="base.definition">
+        <put-attribute name="title" value="Winery List" />
+        <put-attribute name="body" value="/WEB-INF/jsp/winery_list.jsp" />
+    </definition>
+
+    <definition name="wine_list" extends="base.definition">
+        <put-attribute name="title" value="Wine List" />
+        <put-attribute name="body" value="/WEB-INF/jsp/wine_list.jsp" />
+    </definition>
+
+    <definition name="winery" extends="base.definition">
+        <put-attribute name="title" value="Winery Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/winery.jsp" />
+    </definition>
+
+    <definition name="wine" extends="base.definition">
+        <put-attribute name="title" value="Wine Detail" />
+        <put-attribute name="body" value="/WEB-INF/jsp/wine.jsp" />
+    </definition>
+    
+</tiles-definitions>
