@@ -19,6 +19,7 @@ import com.kondortek.wineserver.service.WineService;
 @RequestMapping("/ws")
 public class WebServicesController {
 
+	
 	private static final Logger log = Logger.getLogger(WebServicesController.class.getName());
 	
 	@Resource
